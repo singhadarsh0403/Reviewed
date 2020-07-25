@@ -1,0 +1,96 @@
+.top{
+    background-color: #000;
+    color: white;
+    
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    align-content: flex-end;
+}
+
+li{
+    padding:10px;
+    align-content: flex-end;
+    
+
+}
+
+.main{
+    font-size:40px;
+    
+}
+
+@media(min-width:780px){
+    .bdy{
+        display: flex;
+    }
+}
+.bdy{
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    font-size: inherit;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 128px;
+    
+    
+}
+.new{
+    font-size: 30px;
+    padding-bottom: 40px;
+    font-weight: 300;
+    line-height: inherit;
+    text-decoration: none;
+    align-items: center;
+    /*text-align: left;*/
+    text-align: center;
+    margin: 5%;
+    /*width: 100%;*/
+    
+    border-bottom: 2px solid black;
+    /*border-bottom-width: 50%;*/
+    /*padding-right: 20%;*/
+    
+     
+}
+
+a>img{
+    height: 35px;
+    width: 35px;
+    float: right;
+    padding-right: 50px;
+    padding-left: 80px;
+    
+
+}
+a{
+    /*width: 100%;*/
+    position: relative;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    font-size: inherit;
+    padding-left: 10px;
+    display: inline-block;
+}
+a:hover{
+    color: #333333;
+}
+.arrow:hover{
+    color: #333333;
+}
+.new:hover{
+    color: #333333;
+}
+.foot{
+    position: fixed;
+    bottom: 5px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}

@@ -1,0 +1,75 @@
+{{!-- <!DOCTYPE html> --}}
+{{!-- <html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Index</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style/index.css">
+	
+</head>
+
+<body>
+	<div class="top">
+		<ul>
+			<li class="main">Albatross</li>
+			<li>Working</li>
+			<li>Albatross</li>
+		</ul>
+	</div>
+	<div class="bdy">
+		<div class="new">
+			<a href="#">New User <img src="./right-arrow-alt-regular-84.png" alt="">  </a>
+		</div>
+		<div class="new">
+			<a href="#">Old User<img src="./right-arrow-alt-regular-84.png" alt=""> </a>
+		</div>
+	</div>
+	<div class="foot">
+		This is the footer
+	</div>
+</body>
+</html> --}}
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>home</title>
+        {{!-- <link rel="stylesheet" href="./css/sttyle.css"> --}}
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./css/index.css">
+    </head>
+
+<body>
+    {{!-- in hbs we use {{ }} for data binding --}}
+    
+    <div class="main-content">
+        {{>header}}
+
+        {{!-- <form action="">
+            <input type="text" id="company"placeholder="company">
+            <input type="number" id="reNum" placeholder="Registration number">
+            <input type="text" id="location" placeholder="Location">
+            <button type="submit">search</button>
+        </form> --}}
+    <div class="bdy">
+		<div class="new">
+			<a href="/login">New User <img src="./right-arrow-alt-regular-84.png" alt="">  </a>
+		</div>
+		<div class="new">
+			<a href="/login">Old User<img src="./right-arrow-alt-regular-84.png" alt=""> </a>
+		</div>
+	</div>
+	</div>
+        
+    </div>
+
+    
+   
+    {{>footer}}
+
+{{!--       
+        <script src="./js/report.js"></script> --}}
+        
+</body>
+
+</html>

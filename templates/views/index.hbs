@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>home</title>
+        {{!-- <link rel="stylesheet" href="./css/sttyle.css"> --}}
+      <link rel="stylesheet" href="./css/CompDataIp.css">
+    </head>
+
+<body>
+    {{!-- in hbs we use {{ }} for data binding --}}
+    
+    <div class="main-content">
+        {{>header}}
+
+        {{!-- <form action="">
+            <input type="text" id="company"placeholder="company">
+            <input type="number" id="reNum" placeholder="Registration number">
+            <input type="text" id="location" placeholder="Location">
+            <button type="submit">search</button>
+        </form> --}}
+        <div class="pic" id="pic">
+			<img src="./banner.jpg" alt="">
+		</div>
+        <form action="">
+          <div class="frm">
+			<div class="frm-left">
+				<input type="text" placeholder="Company Name"  id="company">
+				<input type="date" placeholder="Established In">
+				<div class="date" style="font-size: 10px;">**Extablished date</div>
+				<input type="text" placeholder="Location" id="location">
+				<input type="number" placeholder="Valuation">
+				<input type="number" placeholder="Reg Number" id="reNum" >
+			</div>
+			<div class="frm-rgt">
+			<button class="styleClass" onclick="document.getElementById('getTax').click()">Tax documents</button>
+				<input type='file' id="getTax" style="display:none">
+			<button class="styleClass" onclick="document.getElementById('getBank').click()">Bank Statements</button>
+				<input type='file' id="getBank" style="display:none">
+			<button class="styleClass" onclick="document.getElementById('getReg').click()">Tax Registration Doc</button>
+				<input type='file' id="getReg" style="display:none">
+			<button class="styleClass" onclick="document.getElementById('getCre').click()">Credit number</button>
+				<input type='file' id="getCre" style="display:none">
+			<button class="styleClass" onclick="document.getElementById('getOther').click()">Other</button>
+				<input type='file' id="getOther" style="display:none">
+			</div>
+			<div class="sbt">
+				<a href="/report" style="display: inline; color:black; font-size:15px; padding:0; margin:0; height:5px; width:5px;" id="anchor">Next</a>
+				<button type="submit" class="sbt"><a href="/report"></a>Submit</a></button>
+				
+			</div>
+		
+		  </div>
+        </form>
+	</div>
+        </form>
+     
+    </div>
+
+    
+   
+    {{>footer}}
+
+      
+        <script src="./js/report.js"></script>
+        
+</body>
+
+</html>

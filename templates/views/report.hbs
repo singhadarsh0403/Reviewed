@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>home</title>
+        {{!-- <link rel="stylesheet" href="./css/sttyle.css"> --}}
+      <link rel="stylesheet" href="./css/CompDataIp.css">
+    </head>
+
+<body>
+    {{!-- in hbs we use {{ }} for data binding --}}
+    
+    <div class="main-content">
+        {{>header}}
+
+        {{!-- <form action="">
+            <input type="text" id="company"placeholder="company">
+            <input type="number" id="reNum" placeholder="Registration number">
+            <input type="text" id="location" placeholder="Location">
+            <button type="submit">search</button>
+        </form> --}}
+        <div class="pic" id="pic">
+			<img src="./banner.jpg" alt="">
+            <br>
+            <h3>Take an Insurance </h3>
+		</div>
+        <form action="">
+          <div class="frm">
+			{{!-- <div class="frm-left">
+				<input type="text" placeholder="Compnay Name"  id="company">
+				<input type="date" placeholder="Established In">
+				<input type="text" placeholder="Location" id="location">
+				<input type="number" placeholder="Valuation">
+				<input type="text" placeholder="Reg Number" id="reNum" >
+			</div> --}}
+            <div class="frm-left">
+				<input type="number" placeholder="Value of Cargo"  id="company">
+				<input type="number" placeholder="Distance In Km" id="distance">
+				<input type="text" placeholder="Location" id="location">
+                <label type="text" for="vehicle"></label>
+                <select id="vehicle" name="vehicle">
+                    <option value="NULL">Vehicle catagory:</option>
+                    <option value="Low">Low Tier</option>
+                    <option value="High">High Tier</option>
+                </select>
+
+                <label type="text" for="Package"></label>
+                <select id="package" name="package">
+                    <option value="NULL">package catagory</option>
+                    <option value="delicate">Delicate</option>
+                    <option value="tough">Normal</option>
+                    <option value="household">Household</option>
+                </select>
+
+			</div>
+
+			{{!-- <div class="frm-rgt">
+			<button class="styleClass" onclick="document.getElementById('getTax').click()">Tax documents</button>
+				<input type='file' id="getTax" style="display:none">
+			<button class="styleClass" onclick="document.getElementById('getBank').click()">Bank Statements</button>
+				<input type='file' id="getBank" style="display:none">
+			<button class="styleClass" onclick="document.getElementById('getReg').click()">Tax Registration Doc</button>
+				<input type='file' id="getReg" style="display:none">
+			<button class="styleClass" onclick="document.getElementById('getCre').click()">Credit number</button>
+				<input type='file' id="getCre" style="display:none">
+			<button class="styleClass" onclick="document.getElementById('getOther').click()">Other</button>
+				<input type='file' id="getOther" style="display:none">
+			</div> --}}
+
+			<div class="sbt">
+                
+			<button type="submit" class="sbt" onclick="myFunction()">Check Offers</button>
+			</div>
+		
+		  </div>
+        </form>
+	</div>
+        </form>
+       
+
+        <table id="table" >
+            <tr>
+                <th>Insured Amount(INR)</th>
+                <th>Premium</th>
+                <th>Benefits</th>
+                <th>Opt</th>
+            </tr>
+            <tr >
+                <td>10,00,000</td>
+                <td>57,818</td>
+                <td>Base Cover</td>
+                <td><button id="opt">Buy</button></td>
+            </tr>
+            <tr id="recemond">
+                <td>1,000,000</td>
+                <td>58,818</td>
+                <td>Low Cover</td>
+                <td><button id="opt">Buy</button></td>
+            </tr>
+            <tr>
+                <td>1,000,000</td>
+                <td>60,818</td>
+                <td>High Risk Cover</td>
+                <td><button id="opt">Buy</button></td>
+            </tr>
+            
+        </table>
+    </div>
+    <br>
+    <br>
+
+    
+   
+    {{>footer}}
+
+      <script>function myFunction() {
+  var x = document.getElementById("table");
+  if (x.style.display === "none") {
+    x.style.display = "table";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+        <script src="./js/app.js"></script>
+        
+        
+</body>
+
+</html>
